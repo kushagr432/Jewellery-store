@@ -1,0 +1,129 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Noto+Sans+JP:wght@100..900&display=swap');
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.parent{
+display: flex;
+flex-direction: row;
+color: white;
+justify-content: center;
+align-items: center;
+}
+.list{
+    display: flex;
+    flex-direction: row;
+}
+.heading{
+    font-size: 7vh;
+    font-style: italic;
+    font-weight: 500;
+    font-family: "Rouge Script", cursive;
+    padding-right: 3%;
+}
+.second{
+    margin-right: 18%;
+    /* margin-left: 1vw; */
+    padding-left: 16vw;
+
+}
+.listelement{
+margin-left: 1.5vh;
+margin-right: 1.5vh;
+font-family: "Noto Sans JP", sans-serif;
+}
+.socials{
+    display: flex;
+    flex-direction: row;
+}
+
+.socialelement{
+    margin-right: 2vh;
+
+}
+.socials li img {
+    height: 6vh;
+    width: 84%;
+    
+}
+.secondlist{
+    display:flex ;
+    justify-content: center;
+}
+.list2{
+    display: flex;
+    flex-direction: row;
+}
+.listelement2{
+    margin-left: 1.5vh;
+    margin-right: 1.5vh;
+    font-family: "Noto Sans JP", sans-serif;
+    color: gray;
+    }
+    .socialcont2{
+        opacity: 0;
+    }
+    @media only screen and (max-width: 1200px) {
+
+        .heading{
+            font-size: 4vh;
+        }
+        .second{
+        margin-right: 3%;
+        padding-left: 2vw;
+        }
+        .listelement{
+            margin-left: 1vh;
+            margin-right: 1vh;
+        }
+        .socials li img {
+        height: 4vh;
+        width: 91%;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+
+        .second{
+    margin-right: -12%;
+    padding-left: 1vw;
+    font-size: 1.2vh;
+        }
+        .listelement2{
+            font-size: 1.1vh;
+            margin-left: 1.2vh;
+            margin-right: 1.2vh;
+        }
+        .socials li img {
+        height: 3vh;
+        width: 89%;
+        }
+        .socialcont{
+            opacity: 0;
+        }
+        .socialcont2{
+            opacity: 1;
+            display: flex;
+            justify-content: center;
+            margin-top: 3vh;
+        }
+        .parent{
+            position: relative;
+        }
+        .socialcont{
+            position: absolute;
+        }
+    }
+    @media only screen and (max-width: 410px) {
+        .heading{
+            font-size: 3vh;
+        }
+        .second{
+            font-size: 0.9vh;
+        }
+        .listelement2{
+            font-size: 0.9vh;
+        }
+    }

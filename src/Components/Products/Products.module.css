@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Noto+Sans+JP:wght@100..900&display=swap');
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2vw;
+  padding: 5vw;
+}
+
+.gridelement {
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.gridelement.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.gridelement img {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  transition: filter 0.3s;
+}
+
+.gridelement img:hover {
+  
+  cursor: pointer;
+}
+
+.imghead {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-size: 2vh;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 500;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+#heading {
+    color: white;
+    font-size: 8vh;
+    font-family: "EB Garamond", serif;
+    font-weight: 700;
+    margin-bottom: 2vh;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  }
+  
+  #heading.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  #heading2 {
+    color: gray;
+    font-family: "Noto Sans JP", sans-serif;
+    width: 60%;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  }
+  
+  #heading2.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+.cont2 {
+  width: 100%;
+  display: flex;
+  
+}
+
+
+.bannercont {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 24vh;
+  height: auto;
+  width: 100vw;
+}
+
+#bannerimg {
+  height: auto;
+  width: 90%;
+  max-height: 40vh;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.bannercont p {
+  position: absolute;
+  bottom: 45%;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  font-family: "EB Garamon", serif;
+  font-size: 9vh;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.87);
+  text-align: center;
+  transition: opacity 0.3s;
+}
+
+#button {
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  color: black;
+  height: 8vh;
+  width: 10vw;
+  font-weight: 600;
+  font-family: "Noto Sans JP", sans-serif;
+  padding: 2vh;
+  border-radius: 1vh;
+  border: none;
+  cursor: pointer;
+}
+
+#button:hover {
+  background-color: #f0f0f0;
+}
+
+@media only screen and (max-width: 1200px) {
+  .grid {
+    padding: 9vw;
+  }
+  #heading {
+    font-size: 4vh;
+  }
+  #heading2 {
+    font-size: 1.5vh;
+  }
+  .gridelement img {
+    height: 33vh;
+  }
+  #bannerimg {
+    max-height: 32vh;
+  }
+  .bannercont p {
+    font-size: 5vh;
+  }
+  #button{
+    height: 6vh;
+    width: 18vw;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #heading {
+    font-size: 2.9vh;
+  }
+  #heading2 {
+    font-size: 0.7vh;
+  }
+  .gridelement img {
+    height: 19vh;
+  }
+  .imghead {
+    bottom: 6px;
+    font-size: 1vh;
+  }
+  .bannercont {
+    margin-top: 18vh;
+  }
+  #bannerimg {
+    max-height: 23vh;
+  }
+  .bannercont p {
+    font-size: 3vh;
+  }
+  #button{
+    height: 5.5vh;
+        width: 25vw;
+        padding: 1.5vh;
+
+  }
+}
+@media only screen and (max-width: 410px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #heading {
+    font-size: 2vh;
+  }
+  .gridelement img {
+    height: 17vh;
+  }
+  #bannerimg {
+    max-height: 17vh;
+  }
+  .bannercont p {
+    font-size: 2.5vh;
+  }
+  #button{
+    height: 4.2vh;
+    width: 33vw;
+    padding: 0.5vh;
+  }
+}

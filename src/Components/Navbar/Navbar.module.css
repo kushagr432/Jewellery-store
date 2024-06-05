@@ -1,0 +1,103 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Noto+Sans+JP:wght@100..900&display=swap');
+
+.parent{
+display: flex;
+flex-direction: row;
+color: white;
+justify-content: center;
+align-items: center;
+}
+.list{
+    display: flex;
+    flex-direction: row;
+}
+.heading{
+    font-size: 7vh;
+    font-style: italic;
+    font-weight: 500;
+    font-family: "Rouge Script", cursive;
+    padding-right: 3%;
+}
+.second{
+margin-right: 55%;
+
+}
+.listelement{
+margin-left: 1.5vh;
+margin-right: 1.5vh;
+font-family: "Noto Sans JP", sans-serif;
+}
+.listelement:hover{
+    cursor: pointer;
+}
+.button{
+    background-color: white;
+    color: black;
+    height: 7vh;
+    width: 8.5vw;
+    font-weight: 600;
+    font-family: "Noto Sans JP", sans-serif;
+    padding: 2vh;
+    border-radius: 0.5vh;
+}
+@media only screen and (max-width: 1200px) {
+
+.second{
+    margin-right: 20%;
+}
+.heading{
+    font-size: 6vh;
+
+}
+.listelement{
+    margin-left: 1vh;
+    margin-right: 1vh;
+}
+.button{
+    height: 6vh;
+    width: 13.5vw;
+    font-size: 1.5vh;
+    padding: 1vh;
+}
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .second{
+        margin-right: 5%;
+    }
+    .heading{
+        font-size: 4vh;
+    
+    }
+    .button{
+        height: 5vh;
+        width: 16.5vw;
+        opacity: 0;
+    }
+.list{
+    font-size: 1.2vh;
+
+}
+    .parent{
+        position: relative;
+    }
+    .button{
+        position: absolute;
+        left: 0;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .heading{
+        font-size: 3vh;
+    
+    }
+    .list{
+        font-size: 1vh;
+    
+    }
+}

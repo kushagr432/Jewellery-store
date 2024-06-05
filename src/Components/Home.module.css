@@ -1,0 +1,14 @@
+.parent{
+    background-color: #151515;
+    height: fit-content;
+}
+.nav{
+    padding-top: 4vh;
+    padding-bottom: 12vh;
+}
+
+@media only screen and (max-width: 410px) {
+    .nav{
+        padding-bottom: 10vh;
+    }
+}
